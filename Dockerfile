@@ -6,10 +6,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteract
   wget \
   git \
   zip \
+  build-essential \
   jq
 
 
 COPY *.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
-LABEL maintainer="Jay Zhang <wangyoucao577@gmail.com>"
+LABEL maintainer="Bjoern Schilberg <bjoern.schilberg@intevation.de>"
